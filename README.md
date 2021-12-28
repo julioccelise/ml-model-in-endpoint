@@ -1,0 +1,2 @@
+# ml-model-in-endpoint
+For this tutorial, we'll create an endpoint that will can predict type of iris plant based on the sepal and petal measures (yes, the classic iris problem with the classic iris dataset). You'll need Python for sure. I'll be using scikit-learn as machine learning library and Flask as the web server. You can use the libraries of your choice (TensorFlow, PyTorch, Django...) since this post focuses on how to deploy the trained model
