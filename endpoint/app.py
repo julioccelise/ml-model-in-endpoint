@@ -16,14 +16,14 @@ def predict():
         petal_length = float(data['petal_length'])
         petal_width = float(data['petal_width'])
         
-        flower = [[sepal_length, sepal_width, petal_length, petal_width]]
+        plant = [[sepal_length, sepal_width, petal_length, petal_width]]
 
         sc = load('predictor/standard_scaler.joblib')
         classifier = load('predictor/classifier.joblib')
         
         
-        flower = sc.transform(flower)
-        predicted_class = classifier.predict(flower)
+        plant = sc.transform(plant)
+        predicted_class = classifier.predict(plant)
 
         return jsonify({'class': predicted_class[0]})
     
